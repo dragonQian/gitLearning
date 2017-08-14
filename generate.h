@@ -26,3 +26,8 @@ typedef struct REPETITION_PARAMETER{
 REGEX_PARA *GetRegexStr(char * src_txt_catalog);
 void MyStrnCat(char *&dst_str, char * src_str, int dst_str_len, int src_str_len);
 int CheckRegexStr(char *&src_str);
+
+char *GeneralFramework(char *src_txt_catalog);
+char *GeneralFramework_ver_1(char * src_string);
+REGEX_PARA *GenRandomStr(char *segment_str,int len);//对外处理接口
+REGEX_PARA *GenRandomStrNoHEX(char *segment_str, int len);//对外处理的接口， hex 处理
